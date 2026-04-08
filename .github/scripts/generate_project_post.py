@@ -334,7 +334,7 @@ def _derive_tech_hints(package_block: str) -> list[str]:
     if "gemfile" in lower:
         hints.append("Ruby")
     if "composer.json" in lower:
-        hints.append(".csproj" in lower and "PHP")
+        hints.append("PHP")
     if ".csproj" in lower or ".sln" in lower:
         hints.append(".NET / C#")
     if "dockerfile" in lower or "docker-compose" in lower:
